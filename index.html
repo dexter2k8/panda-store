@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja virtual de games para PC, Playstation e X-Box">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Panda Store - Seu jogo está aqui!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><span>P</span>ANDA <span>S</span>TORE</a>
+            </div>
+            <ul class="tagMenu">
+                <li><a>TODOS</a></li>
+                <li><a>PC</a></li>
+                <li><a>PLAYSTATION</a></li>
+                <li><a>X-BOX</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="cards">
+                <!-- <li id="#0">
+                    <figure style="background-image: url(./img/forest.jpg);">
+                        <input type="button" value="PC">
+                    </figure>
+                    <section>
+                        <h1>The Forest</h1>
+                        <p class="desc">Como o único sobrevivente de um acidente de avião, você se encontra em uma
+                            floresta misteriosa lutando para sobreviver em uma sociedade de mutantes canibais.</p>
+                        <p class="price">R$37,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#1">
+                    <figure style="background-image: url(./img/onedog.webp);">
+                        <input type="button" value="PC">
+                    </figure>
+                    <section>
+                        <h1>One Dog Story</h1>
+                        <p class="desc">One Dog Story é um jogo de aventura de pixel envolvente com elementos de RPG,
+                            jogabilidade que o deixará viciado por horas e personagens bem desenvolvidos.</p>
+                        <p class="price">R$24,89</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#2">
+                    <figure style="background-image: url(./img/ark.jpg);">
+                        <input type="button" value="Playstation">
+                    </figure>
+                    <section>
+                        <h1>Ark Survival Evolved</h1>
+                        <p class="desc">Use habilidade e astúcia para matar, domar, criar e montar dinossauros e
+                            criaturas primitivas vivendo em ARK.</p>
+                        <p class="price">R$157,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#3">
+                    <figure style="background-image: url(./img/farcry5.jpg);">
+                        <input type="button" value="Playstation">
+                    </figure>
+                    <section>
+                        <h1>Farcry 5</h1>
+                        <p class="desc">Enfrente o líder do culto Joseph Seed e seus irmãos, os Arautos, para acender o
+                            fogo da resistência e libertar a comunidade sitiada.</p>
+                        <p class="price">R$179,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#4">
+                    <figure style="background-image: url(./img/forza3.webp);">
+                        <input type="button" value="X-Box">
+                    </figure>
+                    <section>
+                        <h1>Forza Horizon 3</h1>
+                        <p class="desc">Participe de corridas divertidas e sem limites enquanto pilota centenas dos
+                            melhores carros do mundo.</p>
+                        <p class="price">R$118,29</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#5">
+                    <figure style="background-image: url(./img/halo.jpg);">
+                        <input type="button" value="X-Box">
+                    </figure>
+                    <section>
+                        <h1>Halo Wars</h1>
+                        <p class="desc">Halo Wars é uma versão aprimorada do clássico de estratégia em tempo real. Inclui gráficos melhorados e novas conquistas.</p>
+                        <p class="price">R$124,89</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li> -->
+            </ul>
+
+            <aside>
+                <div class="search">
+                    <input type="text" placeholder="Procure seu jogo" id="searchbox">
+                    <button class="fa fa-search" onclick="searchClick()"></button>
+                </div>
+                <section>
+                    <h1>CARRINHO DE COMPRAS</h1>
+                    <ul class="cart">
+                        <!-- <li>
+                            <figure>
+                                <img src="./img/onedog.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>One Dog</h2>
+                                <p class="price">R$124,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="./img/onedog.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>One Dog</h2>
+                                <p class="price">R$124,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="./img/onedog.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>One Dog</h2>
+                                <p class="price">R$124,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="./img/onedog.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>One Dog</h2>
+                                <p class="price">R$124,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li> -->
+                    </ul>
+                    <div class="total">
+                        <div class="texto">
+                            <p>Quantidade:</p>
+                            <p>Total:</p>
+                        </div>
+                        <div class="valor">
+                            <p id="qtd">0</p>
+                            <p id="val">R$0,00</p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
